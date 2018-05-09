@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.AddressMapper">
+    <insert id="save" parameterType="com.entity.Address" useGeneratedKeys="true">
+        insert into address(name,age,mm) values(#{name},#{age},#{mm})
+    </insert>
+    <update id="update" parameterType="com.entity.Address" >
+        update address set name=#{name},age=#{age} WHERE address=#{mm}
+    </update>
+    <delete id="delete" parameterType="com.entity.Address">
+        DELETE FROM address WHERE address=#{mm}
+    </delete>
+    <select id="select"  parameterType="com.entity.Address" resultType="com.entity.Address">
+        SELECT *  FROM address a WHERE a.name=#{name} AND a.age=#{age} AND a.id=#{id}
+    </select>
+    <select id="login"   resultType="com.entity.Address">
+        SELECT *  FROM address a WHERE a.name=#{username} AND a.age=#{age}
+    </select>
+</mapper>

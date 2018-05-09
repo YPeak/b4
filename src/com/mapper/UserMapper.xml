@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.UserMapper">
+    <insert id="save" parameterType="com.entity.User" useGeneratedKeys="true">
+        insert into user(name,age,address) values(#{name},#{age},#{address})
+    </insert>
+    <update id="update" parameterType="com.entity.User" >
+        update USER set name=#{name},age=#{age} WHERE address=#{address}
+    </update>
+    <delete id="delete" parameterType="com.entity.User">
+        DELETE FROM user WHERE address=#{address}
+    </delete>
+</mapper>
