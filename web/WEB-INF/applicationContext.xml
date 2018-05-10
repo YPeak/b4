@@ -46,6 +46,7 @@
 
 
     <!--&lt;!&ndash; 配置数据库连接池（c3p0）这个可以在hibernate.cfg.xml中配置 &ndash;&gt;-->
+    <!--<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"/>-->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"/>
 
         <!--&lt;!&ndash; 基本信息 ：jdbc的url、驱动名、数据库名字、密码&ndash;&gt;-->

@@ -88,15 +88,6 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.18-bin.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
           <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/servlet-api.jar!/" />
         </CLASSES>
         <JAVADOC />
@@ -277,7 +268,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/c3p0-0.9.2.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.46.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -286,16 +277,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/c3p0-oracle-thin-extras-0.9.2.1.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/mchange-commons-java-0.2.3.4.jar!/" />
+          <root url="jar://$MODULE_DIR$/web/WEB-INF/lib/c3p0-0.9.1-pre6.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
