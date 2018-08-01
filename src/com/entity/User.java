@@ -7,16 +7,16 @@ package com.entity;
 //别名不区分大小写
 //@Alias("user")
 public class User {
+
     private String name;
+    private String age;
+    private String address;
 
     public User(String name, String age, String address) {
         this.name = name;
         this.age = age;
         this.address = address;
     }
-
-    private String age;
-    private String address;
 
     public String getName() {
         return name;

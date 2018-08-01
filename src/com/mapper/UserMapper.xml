@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
         <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
                 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--指定mapper的唯一的命名空间 （一般为包名+sql映射文件名）-->
 <mapper namespace="com.mapper.UserMapper">
+    <!--id属性值必须唯一；
+    parameterType属性知名插入时使用的参数类型，也就是实体类型
+    useGeneratedKeys属性标识是否使用数据库的自动增长策略（需要数据库的支持）
+    #{name}类似于占位符一般用于变量的传递  -可以防止sql注入
+    ${name}只是简单的字符串拼接 一般用于group by 字段 ,order by 字段，表名等  -要特别小心sql注入问题
+    -->
     <insert id="save" parameterType="com.entity.User" useGeneratedKeys="true">
         insert into user(name,age,address) values(#{name},#{age},#{address})
     </insert>
@@ -10,5 +18,6 @@
     </update>
     <delete id="delete" parameterType="com.entity.User">
         DELETE FROM user WHERE address=#{address}
+
     </delete>
 </mapper>

@@ -11,14 +11,14 @@ public class Address implements Serializable{
     public Address() {
     }
 
-    private int id;
-
     public Address(int id, String name, String age, String mm) {
         this.id = id;
         this.name = name;
         this.age = age;
         this.mm = mm;
     }
+
+    private int id;
 
     public int getId() {
         return id;
